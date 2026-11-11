@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayZent</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="app">
+        <header>
+            <div class="logo">Play<span>Zent</span></div>
+            <div class="profile">👤 Игрок</div>
+        </header>
+
+        <main>
+            <div class="welcome">
+                <h1>Привет, игрок!</h1>
+                <p>Готов заработать монеты?</p>
+            </div>
+
+            <div class="balance">
+                <p>ТВОЙ БАЛАНС</p>
+                <div class="coins">🪙 <span id="coins">0</span></div>
+                <small>PlayCoins</small>
+            </div>
+
+            <button class="play" onclick="playGame()">🎮 PLAY</button>
+
+            <div class="menu">
+                <button onclick="showMessage('Скоро появятся мини-игры!')">🎯 Игры</button>
+                <button onclick="showMessage('Магазин скоро откроется!')">🛒 Магазин</button>
+                <button onclick="showMessage('Задания скоро появятся!')">🎁 Задания</button>
+                <button onclick="showMessage('Профиль скоро появится!')">👤 Профиль</button>
+            </div>
+        </main>
+
+        <footer>PLAYZENT © 2026</footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
